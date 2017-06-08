@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Object List</title>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="styles/stylesheet.css"/> 
+  </head>
+  
+  <body>
+    <h1>Grocery List</h1>
+   
+    <div id="addItem">
+      <button type="button" id="showForm">Add New Item</button>
+    </div>
+    
+    <div id="main"></div>
+    
+    <script id="formTemplate" type="text/x-handlebars-template">
+        <label for="item">Item:
+          <input type="text" id="item">
+        </label>
+        <label for="quantity">Quantity:
+          <input type="number" id="quantity" min="0">
+      </label>
+    </script>
+    
+    <div id= "formButtons">
+      <button type="button" id="showTable">Show table</button> 
+      <button type="button" id="cancel">Cancel</button>
+    </div>
+    
+    
+    <script id="tableTemplate" type="text/x-handlebars-template">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each items}}
+            <tr>
+              <td>{{item}}</td>
+              <td>{{quantity}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+    <script src="js/handlebars.form-helpers.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+  </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
