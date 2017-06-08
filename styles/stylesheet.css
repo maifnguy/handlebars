@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+  font-size: 100%; 
+}
+table, td, th {
+   border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  width: 300px;
+  margin-top: 1rem;
+}
+th, tr {
+  height: 30px;
+  
+}
+td {
+  text-align: center;
+  
+}
+label {
+  display: block;
+}
+#itemForm {
+  line-height: 1.5rem;
+}
+body {
+  margin: 1rem;
+}
+#addItem {
+  margin-top: 1rem;
+}
