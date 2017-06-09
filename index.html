@@ -17,12 +17,14 @@
     <div id="main"></div>
     
     <script id="formTemplate" type="text/x-handlebars-template">
+      <form id="itemForm">
         <label for="item">Item:
-          <input type="text" id="item">
+            <input type="text" id="item">
+          </label>
+          <label for="quantity">Quantity:
+            <input type="number" id="quantity" min="0">
         </label>
-        <label for="quantity">Quantity:
-          <input type="number" id="quantity" min="0">
-      </label>
+      </form>  
     </script>
     
     <div id= "formButtons">
